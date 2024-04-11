@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Request</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #000000; color: #ffffff;">
+        <a class="navbar-brand" href="index.html">RENTAL'S</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="automobile.html" class="nav-link">Automobile</a></li>
+                <li class="nav-item"><a href="property.html" class="nav-link">Property</a></li>
+                <li class="nav-item"><a href="furniture.html" class="nav-link">Furniture</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Make Request</h1>
+        <form action="view_requests.html" method="post" onsubmit="saveRequest(event)">
+            <div class="form-group">
+                <label for="clientName">Your Name</label>
+                <input type="text" class="form-control" id="clientName" name="clientName" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="service">Select Service</label>
+                <select class="form-control" id="service" name="service" required>
+                    <option value="">Select service...</option>
+                    <option value="Automobile">Automobile</option>
+                    <option value="Property">Property</option>
+                    <option value="Furniture">Furniture</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="requestDetails">Request Details</label>
+                <textarea class="form-control" id="requestDetails" name="requestDetails" rows="3" placeholder="Enter request details"
+                    required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Request</button>
+        </form>
+    </div>
+
+    <footer class="bg-custom-color text-light mt-5" style="background-color: #000000;">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@rentalservices.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-secondary text-center py-2">
+            <p class="mb-0">&copy; 2024 RENTAL'S. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="requestHandler.js"></script>
+</body>
+
+</html>
