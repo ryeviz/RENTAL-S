@@ -3,9 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Make Request</title>
+    <title>Request Submitted</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 
@@ -30,31 +29,12 @@
             </div>
         </nav>
     <div class="container mt-5">
-        <h1 class="text-center mb-4">Make Request</h1>
-        <form action="request_submitted.html" method="post" onsubmit="saveRequest(event)">
-            <div class="form-group">
-                <label for="clientName">Your Name</label>
-                <input type="text" class="form-control" id="clientName" name="clientName" placeholder="Enter your name" required>
-            </div>
-            <div class="form-group">
-                <label for="contactNumber">Contact Number</label>
-                <input type="tel" class="form-control" id="contactNumber" name="contactNumber" placeholder="Enter your contact number" required>
-            </div>
-            <div class="form-group">
-                <label for="service">Select Service</label>
-                <select class="form-control" id="service" name="service" required>
-                    <option value="">Select service...</option>
-                    <option value="Automobile">Automobile</option>
-                    <option value="Property">Property</option>
-                    <option value="Furniture">Furniture</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="requestDetails">Request Details</label>
-                <textarea class="form-control" id="requestDetails" name="requestDetails" rows="3" placeholder="Enter request details" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit Request</button>
-        </form>
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Request Submitted!</h4>
+            <p>Your request has been successfully submitted. A dealer will contact you shortly.</p>
+            <hr>
+            <p class="mb-0">Thank you for using our services.</p>
+        </div>
     </div>
 
     <footer class="bg-custom-color text-light mt-5" style="background-color: #000000;">
@@ -65,13 +45,29 @@
                     <p>Email: info@rentalservices.com</p>
                     <p>Phone: +1 (123) 456-7890</p>
                 </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light">Home</a></li>
+                        <li><a href="pricing.html" class="text-light">Pricing</a></li>
+                        <li><a href="automobile.html" class="text-light">Automobile</a></li>
+                        <li><a href="property.html" class="text-light">Property</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Facebook</a></li>
+                        <li><a href="#" class="text-light">Twitter</a></li>
+                        <li><a href="#" class="text-light">Instagram</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="bg-secondary text-center py-2">
             <p class="mb-0">&copy; 2024 RENTAL'S. All rights reserved.</p>
         </div>
     </footer>
-
 </body>
 
 </html>
