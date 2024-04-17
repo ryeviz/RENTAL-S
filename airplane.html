@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN RENTALS</title>
+    <title>RENTALS - Airplanes</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1465173121987-373740a169b3'); background-size: cover; background-repeat: no-repeat;" data-stellar-background-ratio="0.5">
         <nav class="navbar navbar-expand-lg" style="background-color: #000000; color: #ffffff;">
@@ -20,50 +18,51 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="C:/Users/vigna/OneDrive/Desktop/RENTALS/pricing.html" class="nav-link">Pricing</a></li>
-                    <li class="nav-item"><a href="automobile.html" class="nav-link">Automobile</a></li>
-                    <li class="nav-item"><a href="property.html" class="nav-link">Property</a></li>
-                    <li class="nav-item"><a href="furniture.html" class="nav-link">Furniture</a></li>
-                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item active"><a href="airplanes.html" class="nav-link">Airplanes</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
             </div>
         </nav>
 
         <div style="position: fixed; top: 60px; right: 20px;">
-            <a href="pricing.html" style="text-decoration: none; color: #447d81;">
+            <a href="usr_acts.html" style="text-decoration: none; color: #447d81;">
                 <img src="https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/account-icon.png" alt="User Icon" style="width: 30px; height: 30px; margin-right: 5px;">
                 Join Us!
             </a>
         </div>
-        
-    <div class="container mt-5">
-        <div class="card mx-auto" style="max-width: 400px;">
-            <div class="card-body">
-                <h2 class="text-center mb-4">Login</h2>
-                <form id="loginForm" action="validation.php" method="post">
+    </div>
 
-                    <div class="form-group">
-                        <label for="username">Username</label>
-                        <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
+    <div class="container">
+        <h3 class="text-center">Types of Airplanes (DEMO)</h3>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <img src="images/jet.webp" class="card-img-top" alt="Jet Image">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Private Jets</h5>
+                        <p class="card-text">Fast and efficient</p>
                     </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <img src="images/propeller.jpg" class="card-img-top" alt="Propeller Image">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Propeller Plane</h5>
+                        <p class="card-text">Classic and reliable</p>
                     </div>
-                    <div class="form-group">
-                        <label for="Type">Choose A Service</label>
-                        <select class="form-control" id="Type" name='role' required>
-                            <option value="AS">Automobile Service</option>
-                            <option value="PS">Property Service</option>
-                            <option value="FS">Furniture Service</option>
-                        </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <img src="images/helicopter.webp" class="card-img-top" alt="Helicopter Image">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Helicopter</h5>
+                        <p class="card-text">Versatile and maneuverable</p>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">Login</button>
-                </form>
-                <!-- Added line below -->
-                <p class="text-center mt-3">Get your RENTAL'S account today by choosing a plan in the <a href="pricing.html">pricing section</a>.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -80,9 +79,9 @@
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="index.html" class="text-light">Home</a></li>
-                        <li><a href="pricing.html" class="text-light">Pricing</a></li>
-                        <li><a href="automobile.html" class="text-light">Automobile</a></li>
-                        <li><a href="property.html" class="text-light">Property</a></li>
+                        <li><a href="airplanes.html" class="text-light">Airplanes</a></li>
+                        <li><a href="about.html" class="text-light">About</a></li>
+                        <li><a href="contact.html" class="text-light">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
@@ -91,7 +90,7 @@
                         <li><a href="#" class="text-light">Facebook</a></li>
                         <li><a href="#" class="text-light">Twitter</a></li>
                         <li><a href="#" class="text-light">Instagram</a></li>
-                    </ul>
+                    </ul>                   
                 </div>
             </div>
         </div>
@@ -101,6 +100,5 @@
     </footer>
 
     <script src="C:\Users\vigna\OneDrive\Desktop\RENTALS\.vscode\.js\script.js"></script>
-
 </body>
 </html>
